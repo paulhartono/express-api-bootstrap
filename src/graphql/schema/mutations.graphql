@@ -1,0 +1,7 @@
+type Mutation {
+  createDeck(input: CreateDeckInput!): ID!
+  deleteDeck(id: ID!): Boolean!
+  createRoom(input: CreateRoomInput!): Room!
+  joinRoom(input: JoinRoomInput!): Room!
+  pickCard(roomCode: String!): Card!
+}

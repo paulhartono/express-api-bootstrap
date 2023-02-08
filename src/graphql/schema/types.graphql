@@ -1,0 +1,36 @@
+enum Visibility {
+  PRIVATE
+  PUBLIC
+}
+
+type HealthCheck {
+  uptime: Float!
+}
+
+type Card {
+  id: ID!
+  name: String!
+  count: Int!
+  pictureUrl: String
+}
+
+type Member {
+  userId: ID!
+  name: String!
+  card: Card
+}
+
+type Room {
+  code: String!
+  hostUserId: String!
+  cards: [Card!]!
+  discardedCards: [Card!]
+  members: [Member!]
+}
+
+type Deck {
+  id: ID!
+  name: String!
+  cards: [Card!]!
+  visibility: Visibility
+}

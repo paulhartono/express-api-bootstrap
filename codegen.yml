@@ -1,0 +1,22 @@
+overwrite: true
+schema: "./src/graphql/schema/**/*.graphql"
+documents: null
+generates:
+  src/graphql/generated.ts:
+    plugins:
+      - add:
+          content:
+            - "/* eslint-disable */"
+            - /**************************************************/
+            - "/* This is an auto generated file. DO NOT Touch! */"
+            - /**************************************************/
+            - ""
+      - "typescript"
+      - "typescript-resolvers"
+    config:
+      avoidOptionals:
+        field: false
+        inputValue: true
+        object: true
+        defaultValue: true
+      contextType: ./types#GraphQLContext

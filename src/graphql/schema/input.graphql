@@ -1,0 +1,21 @@
+input CardInput {
+  name: String!
+  count: Int!
+  pictureUrl: String
+}
+
+input CreateDeckInput {
+  name: String!
+  cards: [CardInput!]!
+  visibility: Visibility!
+}
+
+input CreateRoomInput {
+  name: String!
+  deckId: ID!
+}
+
+input JoinRoomInput {
+  name: String!
+  code: String!
+}

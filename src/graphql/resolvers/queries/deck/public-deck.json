@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Scrum Fibonacci",
+    "cards": [
+      { "id": 1, "name": "0", "count": -1 },
+      { "id": 2, "name": "1", "count": -1 },
+      { "id": 3, "name": "2", "count": -1 },
+      { "id": 4, "name": "3", "count": -1 },
+      { "id": 5, "name": "5", "count": -1 },
+      { "id": 6, "name": "8", "count": -1 },
+      { "id": 7, "name": "13", "count": -1 },
+      { "id": 8, "name": "21", "count": -1 },
+      { "id": 9, "name": "34", "count": -1 },
+      { "id": 10, "name": "55", "count": -1 },
+      { "id": 11, "name": "89", "count": -1 },
+      { "id": 12, "name": "144", "count": -1 },
+      { "id": 13, "name": "Infinity", "count": -1 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Werewolf",
+    "cards": [
+      { "id": 14, "name": "Werewolf", "count": 2 },
+      { "id": 15, "name": "Seer", "count": 1 },
+      { "id": 16, "name": "Mason", "count": 2 },
+      { "id": 17, "name": "Dopppelganger", "count": 2 },
+      { "id": 18, "name": "Villager", "count": 3 },
+      { "id": 19, "name": "Minion", "count": 1 },
+      { "id": 20, "name": "Trouble Maker", "count": 1 },
+      { "id": 21, "name": "Insomniac", "count": 1 },
+      { "id": 22, "name": "Tanner", "count": 1 },
+      { "id": 23, "name": "Hunter", "count": 1 },
+      { "id": 24, "name": "Drunk", "count": 1 }
+    ]
+  }
+]

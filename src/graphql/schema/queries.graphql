@@ -1,0 +1,5 @@
+type Query {
+  healthCheck: HealthCheck!
+  deck(id: ID!): Deck!
+  room(code: String!): Room!
+}

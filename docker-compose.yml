@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+
+  redis:
+    image: redis:6.2.6
+    ports:
+      - ${REDIS_PORT:-6379}:6379
+
+  dcardz-bff:
+    image: phartono/dcardz-bff:latest
+    build: .
+    container_name: ph-dcardz-bff
+    depends_on:
+      - redis
+    restart: always
+    ports:
+      - ${DCARDZ_BFF_PORT:-4000}:4000
+    env_file:
+      - .env.playpen

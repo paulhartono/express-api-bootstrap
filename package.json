@@ -1,0 +1,51 @@
+{
+  "name": "@jedlie/express-bootstrap",
+  "version": "0.0.1",
+  "description": "Package to bootstrap your Express API",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc -p tsconfig.json && cp -r src/graphql/schema dist/graphql",
+    "start": "ts-node src/index.ts",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --max-warnings 0",
+    "test": "jest --passWithNoTests",
+    "codegen": "graphql-codegen --config codegen.yml",
+    "playpen": "ts-node test/playpen/start.ts"
+  },
+  "author": "Paul Hartono <jedlie.dev@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@graphql-codegen/add": "^3.1.0",
+    "@graphql-codegen/cli": "2.2.1",
+    "@graphql-codegen/typescript": "2.2.4",
+    "@graphql-codegen/typescript-resolvers": "2.3.2",
+    "@types/convict": "^6.1.1",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/err-code": "^3.0.0",
+    "@types/express": "^4.17.13",
+    "@types/express-jwt": "^6.0.2",
+    "@types/ioredis": "^4.27.8",
+    "@types/uuid": "^8.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "eslint": "^8.0.1",
+    "graphql": "^15.6.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.5.1",
+    "@graphql-tools/merge": "^8.1.2",
+    "@graphql-tools/schema": "^8.2.0",
+    "apollo-server-express": "^3.4.0",
+    "convict": "^5.2.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "err-code": "^3.0.1",
+    "express": "^4.17.1",
+    "express-healthcheck": "^0.1.0",
+    "express-jwt": "^6.1.0",
+    "ioredis": "^4.28.0",
+    "subscriptions-transport-ws": "^0.9.19",
+    "uuid": "^8.3.2"
+  }
+}
